@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindHeatmapToDataSource", "BindHeatmapToDataSource.csproj", "{F2721203-A773-49C0-9C37-8EF740A1B476}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2721203-A773-49C0-9C37-8EF740A1B476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2721203-A773-49C0-9C37-8EF740A1B476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2721203-A773-49C0-9C37-8EF740A1B476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2721203-A773-49C0-9C37-8EF740A1B476}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7165269F-2B51-4DCB-9A49-91B415828123}
+	EndGlobalSection
+EndGlobal
