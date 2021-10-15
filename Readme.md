@@ -34,3 +34,7 @@ To bind a heatmap to a data source, follow the steps below:
 
 - [HeatmapControl](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.Heatmap.HeatmapControl?v=21.2&p=netframework)
 - [HeatmapDataSourceAdapter](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.Heatmap.HeatmapDataSourceAdapter?v=21.2&p=netframework)
+
+## More Examples
+
+- [How to Create a Heatmap Based on Arrays of String and Numeric Values](https://github.com/DevExpress-Examples/winforms-heatmap-matrix-data)
