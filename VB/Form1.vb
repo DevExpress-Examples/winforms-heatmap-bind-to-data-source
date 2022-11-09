@@ -1,9 +1,7 @@
+Imports System.Data
+Imports DevExpress.Drawing
 Imports DevExpress.XtraCharts
 Imports DevExpress.XtraCharts.Heatmap
-Imports System.Data
-Imports System.Drawing
-Imports System.IO
-Imports System.Windows.Forms
 
 Namespace BindHeatmapToDataSource
 
@@ -27,7 +25,7 @@ Namespace BindHeatmapToDataSource
             Me.heatmap.Titles.Add(New HeatmapTitle With {.Text = "Balance of Trade"})
             Me.heatmap.Legend.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             Me.heatmap.Label.Visible = True
-            Me.heatmap.Label.Font = New System.Drawing.Font("SegoeUI", 6)
+            Me.heatmap.Label.DXFont = New DXFont("SegoeUI", 6)
             Me.heatmap.Label.Pattern = "{V}"
             Me.heatmap.Label.Color = System.Drawing.Color.Black
             Me.heatmap.ToolTipEnabled = True

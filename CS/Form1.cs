@@ -2,6 +2,7 @@
 using DevExpress.XtraCharts.Heatmap;
 using System.Data;
 using System.Drawing;
+using DevExpress.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -42,7 +43,7 @@ namespace BindHeatmapToDataSource {
             heatmap.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
 
             heatmap.Label.Visible = true;
-            heatmap.Label.Font = new Font("SegoeUI", 6);
+            heatmap.Label.DXFont = new DXFont("SegoeUI", 6);
             heatmap.Label.Pattern = "{V}";
             heatmap.Label.Color = Color.Black;
 
