@@ -11,9 +11,9 @@ Namespace BindHeatmapToDataSource
         ''' </summary>
         <STAThread>
         Sub Main()
-            WindowsFormsSettings.SetDPIAware()
+            Call WindowsFormsSettings.SetDPIAware()
             WindowsFormsSettings.AllowDpiScale = True
-            WindowsFormsSettings.AllowAutoScale = DevExpress.Utils.DefaultBoolean.[True]
+            WindowsFormsSettings.AllowAutoScale = DevExpress.Utils.DefaultBoolean.True
             Call Application.EnableVisualStyles()
             Application.SetCompatibleTextRenderingDefault(False)
             Call Application.Run(New Form1())
