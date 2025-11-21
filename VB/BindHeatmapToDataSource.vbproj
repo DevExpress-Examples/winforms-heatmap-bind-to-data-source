@@ -98,8 +98,5 @@
   <ItemGroup>
     <Content Include="Data\BalanceOfTrade.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="My Project\" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

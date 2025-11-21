@@ -1,7 +1,10 @@
-Imports System.Data
-Imports DevExpress.Drawing
 Imports DevExpress.XtraCharts
 Imports DevExpress.XtraCharts.Heatmap
+Imports System.Data
+Imports System.Drawing
+Imports DevExpress.Drawing
+Imports System.IO
+Imports System.Windows.Forms
 
 Namespace BindHeatmapToDataSource
 
@@ -11,21 +14,21 @@ Namespace BindHeatmapToDataSource
         Public Sub New()
             Me.InitializeComponent()
             Dim data As System.Data.DataTable = BindHeatmapToDataSource.Form1.CreateDataSet("BalanceOfTrade.xml")
-            Me.heatmap.DataAdapter = New HeatmapDataSourceAdapter() With {.XArgumentDataMember = "Country", .YArgumentDataMember = "Product", .ColorDataMember = "Value", .DataSource = data}
-            Dim palette As Palette = New Palette("Custom") From {System.Drawing.Color.Red, System.Drawing.Color.White, System.Drawing.Color.Green}
-            Dim colorProvider As HeatmapRangeColorProvider = New HeatmapRangeColorProvider() With {.Palette = palette, .ApproximateColors = True, .LegendItemPattern = "{V1} .. {V2}"}
+            Me.heatmap.DataAdapter = New DevExpress.XtraCharts.Heatmap.HeatmapDataSourceAdapter() With {.XArgumentDataMember = "Country", .YArgumentDataMember = "Product", .ColorDataMember = "Value", .DataSource = data}
+            Dim palette As DevExpress.XtraCharts.Palette = New DevExpress.XtraCharts.Palette("Custom") From {System.Drawing.Color.Red, System.Drawing.Color.White, System.Drawing.Color.Green}
+            Dim colorProvider As DevExpress.XtraCharts.Heatmap.HeatmapRangeColorProvider = New DevExpress.XtraCharts.Heatmap.HeatmapRangeColorProvider() With {.Palette = palette, .ApproximateColors = True, .LegendItemPattern = "{V1} .. {V2}"}
             Me.heatmap.ColorProvider = colorProvider
-            colorProvider.RangeStops.Add(New HeatmapRangeStop(0, HeatmapRangeStopType.Percentage))
-            colorProvider.RangeStops.Add(New HeatmapRangeStop(-10))
-            colorProvider.RangeStops.Add(New HeatmapRangeStop(-2.5))
-            colorProvider.RangeStops.Add(New HeatmapRangeStop(0))
-            colorProvider.RangeStops.Add(New HeatmapRangeStop(2.5))
-            colorProvider.RangeStops.Add(New HeatmapRangeStop(10))
-            colorProvider.RangeStops.Add(New HeatmapRangeStop(1, HeatmapRangeStopType.Percentage))
-            Me.heatmap.Titles.Add(New HeatmapTitle With {.Text = "Balance of Trade"})
+            colorProvider.RangeStops.Add(New DevExpress.XtraCharts.Heatmap.HeatmapRangeStop(0, DevExpress.XtraCharts.Heatmap.HeatmapRangeStopType.Percentage))
+            colorProvider.RangeStops.Add(New DevExpress.XtraCharts.Heatmap.HeatmapRangeStop(-10))
+            colorProvider.RangeStops.Add(New DevExpress.XtraCharts.Heatmap.HeatmapRangeStop(-2.5))
+            colorProvider.RangeStops.Add(New DevExpress.XtraCharts.Heatmap.HeatmapRangeStop(0))
+            colorProvider.RangeStops.Add(New DevExpress.XtraCharts.Heatmap.HeatmapRangeStop(2.5))
+            colorProvider.RangeStops.Add(New DevExpress.XtraCharts.Heatmap.HeatmapRangeStop(10))
+            colorProvider.RangeStops.Add(New DevExpress.XtraCharts.Heatmap.HeatmapRangeStop(1, DevExpress.XtraCharts.Heatmap.HeatmapRangeStopType.Percentage))
+            Me.heatmap.Titles.Add(New DevExpress.XtraCharts.Heatmap.HeatmapTitle With {.Text = "Balance of Trade"})
             Me.heatmap.Legend.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             Me.heatmap.Label.Visible = True
-            Me.heatmap.Label.DXFont = New DXFont("SegoeUI", 6)
+            Me.heatmap.Label.DXFont = New DevExpress.Drawing.DXFont("SegoeUI", 6)
             Me.heatmap.Label.Pattern = "{V}"
             Me.heatmap.Label.Color = System.Drawing.Color.Black
             Me.heatmap.ToolTipEnabled = True
