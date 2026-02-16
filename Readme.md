@@ -40,7 +40,7 @@ To bind a heatmap to a data source, follow the steps below:
 
 - [How to Create a Heatmap Based on Arrays of String and Numeric Values](https://github.com/DevExpress-Examples/winforms-heatmap-matrix-data)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-heatmap-bind-to-data-source&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-heatmap-bind-to-data-source&~~~was_helpful=no)
 
